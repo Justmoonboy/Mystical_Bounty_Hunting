@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "cellestium",
+  "ingredient": {
+    "item": "mysticalbountyhunting:cellestium_ore"
+  },
+  "result": {
+    "id": "mysticalbountyhunting:cellestium_ingot"
+  }
+}
