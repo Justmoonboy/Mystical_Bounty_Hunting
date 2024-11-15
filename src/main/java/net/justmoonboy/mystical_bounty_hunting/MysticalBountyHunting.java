@@ -1,5 +1,7 @@
 package net.justmoonboy.mystical_bounty_hunting;
 
+import net.justmoonboy.mystical_bounty_hunting.block.ModBlocks;
+import net.justmoonboy.mystical_bounty_hunting.item.ModCreativeModTabs;
 import net.justmoonboy.mystical_bounty_hunting.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -39,10 +41,11 @@ public class MysticalBountyHunting
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus);
 
-        // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -53,13 +56,6 @@ public class MysticalBountyHunting
 
     }
 
-    // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.CELLESTIUM_INGOT);
-            event.accept(ModItems.RAW_CELLESTIUM);
-        }
-    }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
