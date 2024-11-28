@@ -15,6 +15,12 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_CELLESTIUM = ITEMS.register("raw_cellestium",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> GLOWBULB = ITEMS.register("glow_bulb",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.GLOWBULB)));
+    public static final DeferredItem<Item> SCRUMPY = ITEMS.register("scrumpy",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SCRUMPY)));
+    public static final DeferredItem<Item> APPLEJUICE = ITEMS.register("apple_juice",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.APPLEJUICE)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

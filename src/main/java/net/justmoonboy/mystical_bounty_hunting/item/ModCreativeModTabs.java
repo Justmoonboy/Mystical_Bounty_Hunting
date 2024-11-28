@@ -21,6 +21,9 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.CELLESTIUM_INGOT);
                         output.accept(ModItems.RAW_CELLESTIUM);
+                        output.accept(ModItems.GLOWBULB);
+                        output.accept(ModItems.SCRUMPY);
+                        output.accept(ModItems.APPLEJUICE);
                         output.accept(ModBlocks.CELLESTIUM_BLOCK);
                         output.accept(ModBlocks.CELLESTIUM_ORE);
                     }).build());

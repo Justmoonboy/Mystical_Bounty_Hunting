@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "cellestium_block",
-    "cellestium_ore"
+    "mysticalbountyhunting:cellestium_block",
+    "mysticalbountyhunting:cellestium_ore"
   ]
 }
