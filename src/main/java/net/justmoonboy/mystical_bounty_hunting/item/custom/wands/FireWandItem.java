@@ -1,5 +1,6 @@
 package net.justmoonboy.mystical_bounty_hunting.item.custom.wands;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Position;
 import net.minecraft.sounds.SoundEvents;
@@ -23,14 +24,15 @@ import net.neoforged.neoforge.common.ItemAbility;
 
 public class FireWandItem extends Item implements ProjectileItem {
     private static final int COOLDOWN = 10;
+
+
     public FireWandItem(Item.Properties properties) {
         super(properties);
     }
 
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        level.playSound((Player) null, player.getX(), player.getY(), player.getZ(), SoundEvents.FIRECHARGE_USE, SoundSource.NEUTRAL, 0.5F, 0.4F / (level.getRandom().nextFloat() * 0.4F + 0.8F));
-
-        return null;
+    private void playSound(Level level, BlockPos pos) {
+        RandomSource randomsource = level.getRandom();
+        level.playSound((Player)null, pos, SoundEvents.FIRECHARGE_USE, SoundSource.BLOCKS, 1.0F, (randomsource.nextFloat() - randomsource.nextFloat()) * 0.2F + 1.0F);
     }
 
     public Projectile asProjectile(Level level, Position pos, ItemStack stack, Direction direction) {

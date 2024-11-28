@@ -10,6 +10,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.SmallFireball;
 import net.minecraft.world.entity.projectile.windcharge.WindCharge;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -28,9 +29,9 @@ public class AirWandItem extends Item implements ProjectileItem {
 
     public InteractionResultHolder<ItemStack> use(Level p_326306_, Player p_326042_, InteractionHand p_326470_) {
         if (!p_326306_.isClientSide()) {
-            WindCharge windcharge = new WindCharge(p_326042_, p_326306_, p_326042_.position().x(), p_326042_.getEyePosition().y(), p_326042_.position().z());
-            windcharge.shootFromRotation(p_326042_, p_326042_.getXRot(), p_326042_.getYRot(), 0.0F, 1.5F, 1.0F);
-            p_326306_.addFreshEntity(windcharge);
+            WindCharge windCharge = new WindCharge(p_326042_, p_326306_, p_326042_.position().x(), p_326042_.getEyePosition().y(), p_326042_.position().z());
+            windCharge.shootFromRotation(p_326042_, p_326042_.getXRot(), p_326042_.getYRot(), 0.0F, 1.5F, 1.0F);
+            p_326306_.addFreshEntity(windCharge);
         }
 
         p_326306_.playSound((Player)null, p_326042_.getX(), p_326042_.getY(), p_326042_.getZ(), SoundEvents.WIND_CHARGE_THROW, SoundSource.NEUTRAL, 0.5F, 0.4F / (p_326306_.getRandom().nextFloat() * 0.4F + 0.8F));
