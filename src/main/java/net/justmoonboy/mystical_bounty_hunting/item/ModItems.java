@@ -1,6 +1,9 @@
 package net.justmoonboy.mystical_bounty_hunting.item;
 
 import net.justmoonboy.mystical_bounty_hunting.MysticalBountyHunting;
+import net.justmoonboy.mystical_bounty_hunting.item.custom.wands.AirWandItem;
+import net.justmoonboy.mystical_bounty_hunting.item.custom.wands.EarthWandItem;
+import net.justmoonboy.mystical_bounty_hunting.item.custom.wands.FireWandItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -14,6 +17,14 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_CELLESTIUM = ITEMS.register("raw_cellestium",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> AIRWAND = ITEMS.register("air_wand",
+            () -> new AirWandItem(new Item.Properties()));
+    public static final DeferredItem<Item> EARTHWAND = ITEMS.register("earth_wand",
+            () -> new EarthWandItem(new Item.Properties()));
+    public static final DeferredItem<Item> FIREWAND = ITEMS.register("fire_wand",
+            () -> new FireWandItem(new Item.Properties()));
+
 
     public static final DeferredItem<Item> GLOWBULB = ITEMS.register("glow_bulb",
             () -> new Item(new Item.Properties().food(ModFoodProperties.GLOWBULB)));

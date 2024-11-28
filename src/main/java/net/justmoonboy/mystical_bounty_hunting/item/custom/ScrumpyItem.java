@@ -11,9 +11,13 @@ import net.minecraft.world.item.UseAnim;
 import java.awt.*;
 import java.util.List;
 
-public class ScrumpyItem {
+public class ScrumpyItem extends Item {
     public static final FoodProperties SCRUMPY = new FoodProperties.Builder().nutrition(5).saturationModifier(2f)
             .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1000, 5), 1).build();
+
+    public ScrumpyItem(Properties properties) {
+        super(properties);
+    }
 
     public UseAnim getUseAnimation(ItemStack stack) {
         return UseAnim.DRINK;
