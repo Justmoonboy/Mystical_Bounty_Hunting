@@ -7,7 +7,10 @@
   "item.mysticalbountyhunting.air_wand": "Air Wand",
   "item.mysticalbountyhunting.earth_wand": "Earth Wand",
   "item.mysticalbountyhunting.fire_wand": "Fire Wand",
+  "item.mysticalbountyhunting.water_wand": "Water Wand",
   "block.mysticalbountyhunting.cellestium_block": "Block of Cellestium",
   "block.mysticalbountyhunting.cellestium_ore": "Cellestium Ore",
-  "creativetab.mysticalbountyhunting.mysticalbountyhunting": "Mystical Bounty Hunting"
+  "creativetab.mysticalbountyhunting.mysticalbountyhunting": "Mystical Bounty Hunting",
+  "tooltip.mysticalbountyhunting.scrumpy.shift_down": "It looks like something a black, scottish, cyclops would like...",
+  "tooltip.mysticalbountyhunting.scrumpy": "Press Shift for more information"
 }

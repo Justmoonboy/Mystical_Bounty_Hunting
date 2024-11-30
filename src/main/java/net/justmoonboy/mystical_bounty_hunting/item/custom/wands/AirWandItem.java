@@ -38,7 +38,6 @@ public class AirWandItem extends Item implements ProjectileItem {
         ItemStack itemstack = p_326042_.getItemInHand(p_326470_);
         p_326042_.getCooldowns().addCooldown(this, 10);
         p_326042_.awardStat(Stats.ITEM_USED.get(this));
-        itemstack.consume(1, p_326042_);
         return InteractionResultHolder.sidedSuccess(itemstack, p_326306_.isClientSide());
     }
 

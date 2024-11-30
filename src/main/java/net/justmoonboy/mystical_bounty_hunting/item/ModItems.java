@@ -4,6 +4,7 @@ import net.justmoonboy.mystical_bounty_hunting.MysticalBountyHunting;
 import net.justmoonboy.mystical_bounty_hunting.item.custom.wands.AirWandItem;
 import net.justmoonboy.mystical_bounty_hunting.item.custom.wands.EarthWandItem;
 import net.justmoonboy.mystical_bounty_hunting.item.custom.wands.FireWandItem;
+import net.justmoonboy.mystical_bounty_hunting.item.custom.wands.WaterWandItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -24,6 +25,8 @@ public class ModItems {
             () -> new EarthWandItem(new Item.Properties()));
     public static final DeferredItem<Item> FIREWAND = ITEMS.register("fire_wand",
             () -> new FireWandItem(new Item.Properties()));
+    public static final DeferredItem<Item> WATERWAND = ITEMS.register("water_wand",
+            () -> new WaterWandItem(new Item.Properties()));
 
 
     public static final DeferredItem<Item> GLOWBULB = ITEMS.register("glow_bulb",

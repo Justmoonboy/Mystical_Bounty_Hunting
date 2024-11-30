@@ -29,6 +29,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.AIRWAND);
                         output.accept(ModItems.EARTHWAND);
                         output.accept(ModItems.FIREWAND);
+                        output.accept(ModItems.WATERWAND);
                     }).build());
 
 
