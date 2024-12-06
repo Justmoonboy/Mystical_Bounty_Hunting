@@ -9,11 +9,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
+
 import java.util.List;
 
 public class ScrumpyItem extends Item {
-    public static final FoodProperties SCRUMPY = new FoodProperties.Builder().nutrition(5).saturationModifier(2f)
-            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1000, 7), 1).build();
+    public static final FoodProperties SCRUMPY = new FoodProperties.Builder().nutrition(2).saturationModifier(2f).alwaysEdible()
+            .effect(() -> new  MobEffectInstance(MobEffects.CONFUSION, 1000, 7), 1).build();
 
     public ScrumpyItem(Properties properties) {
         super(properties);

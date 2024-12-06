@@ -1,7 +1,9 @@
 package net.justmoonboy.mystical_bounty_hunting.item.custom.wands;
 
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Position;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -12,8 +14,10 @@ import net.minecraft.world.entity.projectile.SmallFireball;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ProjectileItem;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.Vec3;;
+import net.minecraft.world.phys.Vec3;
+import java.util.List;
 
 public class FireWandItem extends Item implements ProjectileItem {
 
@@ -52,5 +56,16 @@ public class FireWandItem extends Item implements ProjectileItem {
     public Projectile asProjectile(Level level, Position position, ItemStack itemStack, Direction direction) {
 
         return null;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        if(Screen.hasShiftDown()) {
+            tooltipComponents.add(Component.translatable("tooltip.mysticalbountyhunting.fire_wand.shift_down"));
+        } else {
+            tooltipComponents.add(Component.translatable("tooltip.mysticalbountyhunting.fire_wand"));
+        }
+
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

@@ -8,9 +8,19 @@
   "item.mysticalbountyhunting.earth_wand": "Earth Wand",
   "item.mysticalbountyhunting.fire_wand": "Fire Wand",
   "item.mysticalbountyhunting.water_wand": "Water Wand",
+  "item.mysticalbountyhunting.cellestium_nugget": "Cellestium Nugget",
   "block.mysticalbountyhunting.cellestium_block": "Block of Cellestium",
   "block.mysticalbountyhunting.cellestium_ore": "Cellestium Ore",
+  "block.mysticalbountyhunting.bounty_board": "Bounty Board",
   "creativetab.mysticalbountyhunting.mysticalbountyhunting": "Mystical Bounty Hunting",
   "tooltip.mysticalbountyhunting.scrumpy.shift_down": "It looks like something a black, scottish, cyclops would like...",
-  "tooltip.mysticalbountyhunting.scrumpy": "Press Shift for more information"
+  "tooltip.mysticalbountyhunting.scrumpy": "Press Shift for more information",
+  "tooltip.mysticalbountyhunting.air_wand.shift_down": "This item can shoot balls of air that can propel entities.",
+  "tooltip.mysticalbountyhunting.air_wand": "Press Shift for more information",
+  "tooltip.mysticalbountyhunting.earth_wand.shift_down": "This item can remove grass, dirt, stone, and deepslate.",
+  "tooltip.mysticalbountyhunting.earth_wand": "Press Shift for more information",
+  "tooltip.mysticalbountyhunting.fire_wand.shift_down": "This item can shoot fireballs that can light mobs and blocks on fire.",
+  "tooltip.mysticalbountyhunting.fire_wand": "Press Shift for more information",
+  "tooltip.mysticalbountyhunting.water_wand.shift_down": "This item can remove the water from mud and packed mud, as well as add water to ice and turn snow into water.",
+  "tooltip.mysticalbountyhunting.water_wand": "Press Shift for more information"
 }

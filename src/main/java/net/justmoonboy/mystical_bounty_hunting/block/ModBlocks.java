@@ -21,6 +21,8 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> CELLESTIUM_BLOCK = registerBlock("cellestium_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final DeferredBlock<Block> BOUNTY_BOARD = registerBlock("bounty_board",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2f).sound(SoundType.WOOD)));
 
     public static final DeferredBlock<Block> CELLESTIUM_ORE = registerBlock("cellestium_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 6),

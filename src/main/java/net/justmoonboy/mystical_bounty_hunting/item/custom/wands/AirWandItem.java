@@ -1,7 +1,9 @@
 package net.justmoonboy.mystical_bounty_hunting.item.custom.wands;
 
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Position;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -15,9 +17,12 @@ import net.minecraft.world.entity.projectile.windcharge.WindCharge;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ProjectileItem;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.DispenserBlock;
 import net.minecraft.world.phys.Vec3;
+
+import java.util.List;
 
 public class AirWandItem extends Item implements ProjectileItem {
     private static final int COOLDOWN = 10;
@@ -59,5 +64,16 @@ public class AirWandItem extends Item implements ProjectileItem {
         return DispenseConfig.builder().positionFunction((p_338288_, p_338801_) -> {
             return DispenserBlock.getDispensePosition(p_338288_, 1.0, Vec3.ZERO);
         }).uncertainty(6.6666665F).power(1.0F).overrideDispenseEvent(1051).build();
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        if(Screen.hasShiftDown()) {
+            tooltipComponents.add(Component.translatable("tooltip.mysticalbountyhunting.air_wand.shift_down"));
+        } else {
+            tooltipComponents.add(Component.translatable("tooltip.mysticalbountyhunting.air_wand"));
+        }
+
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

@@ -1,0 +1,4 @@
+// 1.21.1	2024-12-05T21:43:32.6086665	Tags for minecraft:block mod id mysticalbountyhunting
+fdcea0eb00e7c1f8f698495f53c3f5e202567e98 data/minecraft/tags/block/mineable/axe.json
+93a11f7cd614ea9a2af2f9417ee6722e71c16fcd data/minecraft/tags/block/mineable/pickaxe.json
+93a11f7cd614ea9a2af2f9417ee6722e71c16fcd data/minecraft/tags/block/needs_diamond_tool.json

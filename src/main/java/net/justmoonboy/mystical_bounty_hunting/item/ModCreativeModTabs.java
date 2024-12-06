@@ -30,6 +30,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.EARTHWAND);
                         output.accept(ModItems.FIREWAND);
                         output.accept(ModItems.WATERWAND);
+                        output.accept(ModBlocks.BOUNTY_BOARD);
                     }).build());
 
 
