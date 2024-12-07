@@ -2,6 +2,7 @@ package net.justmoonboy.mystical_bounty_hunting.datagen;
 
 import net.justmoonboy.mystical_bounty_hunting.MysticalBountyHunting;
 import net.justmoonboy.mystical_bounty_hunting.block.ModBlocks;
+import net.justmoonboy.mystical_bounty_hunting.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -28,5 +29,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.CELLESTIUM_BLOCK.get())
                 .add(ModBlocks.CELLESTIUM_ORE.get());
+
+        tag(ModTags.Blocks.NEEDS_CELLESTIUM_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_CELLESTIUM_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(ModTags.Blocks.NEEDS_CELLESTIUM_TOOL);
     }
 }

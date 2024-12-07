@@ -7,6 +7,7 @@ import net.justmoonboy.mystical_bounty_hunting.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -26,5 +27,17 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.AIRWAND.get())
                 .add(ModItems.FIREWAND.get())
                 .add(ModItems.WATERWAND.get());
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.CELLESTIUM_SWORD.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.CELLESTIUM_PICKAXE.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.CELLESTIUM_AXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.CELLESTIUM_SHOVEL.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.CELLESTIUM_HOE.get());
+
     }
 }

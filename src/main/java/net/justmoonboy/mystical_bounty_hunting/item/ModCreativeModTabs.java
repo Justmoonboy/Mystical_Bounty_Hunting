@@ -21,15 +21,25 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.CELLESTIUM_INGOT);
                         output.accept(ModItems.RAW_CELLESTIUM);
+
                         output.accept(ModBlocks.CELLESTIUM_BLOCK);
                         output.accept(ModBlocks.CELLESTIUM_ORE);
+
+                        output.accept(ModItems.CELLESTIUM_SWORD);
+                        output.accept(ModItems.CELLESTIUM_PICKAXE);
+                        output.accept(ModItems.CELLESTIUM_AXE);
+                        output.accept(ModItems.CELLESTIUM_SHOVEL);
+                        output.accept(ModItems.CELLESTIUM_HOE);
+
                         output.accept(ModItems.GLOWBULB);
                         output.accept(ModItems.SCRUMPY);
                         output.accept(ModItems.APPLEJUICE);
+
                         output.accept(ModItems.AIRWAND);
                         output.accept(ModItems.EARTHWAND);
                         output.accept(ModItems.FIREWAND);
                         output.accept(ModItems.WATERWAND);
+
                         output.accept(ModBlocks.BOUNTY_BOARD);
                     }).build());
 

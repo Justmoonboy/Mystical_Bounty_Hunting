@@ -14,7 +14,8 @@ import java.util.List;
 
 public class ScrumpyItem extends Item {
     public static final FoodProperties SCRUMPY = new FoodProperties.Builder().nutrition(2).saturationModifier(2f).alwaysEdible()
-            .effect(() -> new  MobEffectInstance(MobEffects.CONFUSION, 1000, 7), 1).build();
+            .effect(() -> new  MobEffectInstance(MobEffects.CONFUSION, 1000, 7), 1)
+            .effect(() -> new  MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1000, 7), 1).build();
 
     public ScrumpyItem(Properties properties) {
         super(properties);

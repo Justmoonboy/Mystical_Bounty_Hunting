@@ -7,7 +7,7 @@ import net.justmoonboy.mystical_bounty_hunting.item.custom.wands.AirWandItem;
 import net.justmoonboy.mystical_bounty_hunting.item.custom.wands.EarthWandItem;
 import net.justmoonboy.mystical_bounty_hunting.item.custom.wands.FireWandItem;
 import net.justmoonboy.mystical_bounty_hunting.item.custom.wands.WaterWandItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -39,6 +39,22 @@ public class ModItems {
             () -> new ScrumpyItem(new Item.Properties().food(ModFoodProperties.SCRUMPY)));
     public static final DeferredItem<Item> APPLEJUICE = ITEMS.register("apple_juice",
             () -> new AppleJuiceItem(new Item.Properties().food(ModFoodProperties.APPLEJUICE)));
+
+    public static final DeferredItem<SwordItem> CELLESTIUM_SWORD = ITEMS.register("cellestium_sword",
+            () -> new SwordItem(ModToolTiers.CELLESTIUM, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.CELLESTIUM, 5, -2.4f))));
+    public static final DeferredItem<PickaxeItem> CELLESTIUM_PICKAXE = ITEMS.register("cellestium_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.CELLESTIUM, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.CELLESTIUM, 1.0F, -2.8f))));
+    public static final DeferredItem<ShovelItem> CELLESTIUM_SHOVEL = ITEMS.register("cellestium_shovel",
+            () -> new ShovelItem(ModToolTiers.CELLESTIUM, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.CELLESTIUM, 1.5f, -3.0f))));
+    public static final DeferredItem<AxeItem> CELLESTIUM_AXE = ITEMS.register("cellestium_axe",
+            () -> new AxeItem(ModToolTiers.CELLESTIUM, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.CELLESTIUM, 6f, -3.2f))));
+    public static final DeferredItem<HoeItem> CELLESTIUM_HOE = ITEMS.register("cellestium_hoe",
+            () -> new HoeItem(ModToolTiers.CELLESTIUM, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.CELLESTIUM, 0f, -3.0f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
