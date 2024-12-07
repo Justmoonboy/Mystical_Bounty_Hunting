@@ -1,4 +1,6 @@
-// 1.21.1	2024-12-05T21:43:32.6086665	Tags for minecraft:block mod id mysticalbountyhunting
+// 1.21.1	2024-12-07T16:27:21.3380628	Tags for minecraft:block mod id mysticalbountyhunting
 fdcea0eb00e7c1f8f698495f53c3f5e202567e98 data/minecraft/tags/block/mineable/axe.json
 93a11f7cd614ea9a2af2f9417ee6722e71c16fcd data/minecraft/tags/block/mineable/pickaxe.json
 93a11f7cd614ea9a2af2f9417ee6722e71c16fcd data/minecraft/tags/block/needs_diamond_tool.json
+135a2b6d4ce450bb27de9379bcdd7a7005bcf7d4 data/mysticalbountyhunting/tags/block/incorrect_for_cellestium_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/mysticalbountyhunting/tags/block/needs_cellestium_tool.json

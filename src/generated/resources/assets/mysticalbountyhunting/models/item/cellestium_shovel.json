@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "mysticalbountyhunting:item/water_wand"
+    "layer0": "mysticalbountyhunting:item/cellestium_shovel"
   }
 }

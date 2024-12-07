@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#mysticalbountyhunting:needs_cellestium_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_diamond_tool"
+  ]
+}
