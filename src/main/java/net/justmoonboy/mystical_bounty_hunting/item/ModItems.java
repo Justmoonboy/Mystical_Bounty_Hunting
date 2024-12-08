@@ -60,6 +60,19 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.CELLESTIUM, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.CELLESTIUM, 0f, -3.0f))));
 
+    public static final DeferredItem<ArmorItem> CELLESTIUM_HELMET = ITEMS.register("cellestium_helmet",
+            () -> new ArmorItem(ModArmorMaterials.CELLESTIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(38))));
+    public static final DeferredItem<ArmorItem> CELLESTIUM_CHESTPLATE = ITEMS.register("cellestium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.CELLESTIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(38))));
+    public static final DeferredItem<ArmorItem> CELLESTIUM_LEGGINGS = ITEMS.register("cellestium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.CELLESTIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(38))));
+    public static final DeferredItem<ArmorItem> CELLESTIUM_BOOTS = ITEMS.register("cellestium_boots",
+            () -> new ArmorItem(ModArmorMaterials.CELLESTIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(38))));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

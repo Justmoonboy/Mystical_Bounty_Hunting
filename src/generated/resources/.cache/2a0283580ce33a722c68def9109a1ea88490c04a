@@ -1,7 +1,8 @@
-// 1.21.1	2024-12-07T16:27:21.3370551	Tags for minecraft:item mod id mysticalbountyhunting
+// 1.21.1	2024-12-08T14:16:53.8706076	Tags for minecraft:item mod id mysticalbountyhunting
 d8c037637d3c54f6f3a15c18a43b8ac1a214e6bf data/minecraft/tags/item/axes.json
 4ffde3e4d6c0777af25a8be5b709928fbc8db7b8 data/minecraft/tags/item/hoes.json
 60c9ff2b3e044900a1ca49fdb656181e1d48c323 data/minecraft/tags/item/pickaxes.json
 d0bb46ec9233a0aed6bc8a61ea8d056b21b21ffb data/minecraft/tags/item/shovels.json
 5546820d6a69f4eeeb2ac8922a2e4f96beb89f7c data/minecraft/tags/item/swords.json
+a94dcfbe61674b55447c89ebcb976c2eca825f12 data/minecraft/tags/item/trimmable_armor.json
 b3cf7b5b62015b9f369653c69ab2117efb0e233b data/mysticalbountyhunting/tags/item/wand_items.json

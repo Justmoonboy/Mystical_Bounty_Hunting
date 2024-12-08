@@ -39,5 +39,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.HOES)
                 .add(ModItems.CELLESTIUM_HOE.get());
 
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.CELLESTIUM_HELMET.get())
+                .add(ModItems.CELLESTIUM_CHESTPLATE.get())
+                .add(ModItems.CELLESTIUM_LEGGINGS.get())
+                .add(ModItems.CELLESTIUM_BOOTS.get());
+
     }
 }

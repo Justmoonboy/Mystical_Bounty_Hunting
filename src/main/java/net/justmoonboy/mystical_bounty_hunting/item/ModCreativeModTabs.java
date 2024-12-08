@@ -31,6 +31,11 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.CELLESTIUM_SHOVEL);
                         output.accept(ModItems.CELLESTIUM_HOE);
 
+                        output.accept(ModItems.CELLESTIUM_HELMET);
+                        output.accept(ModItems.CELLESTIUM_CHESTPLATE);
+                        output.accept(ModItems.CELLESTIUM_LEGGINGS);
+                        output.accept(ModItems.CELLESTIUM_BOOTS);
+
                         output.accept(ModItems.GLOWBULB);
                         output.accept(ModItems.SCRUMPY);
                         output.accept(ModItems.APPLEJUICE);
