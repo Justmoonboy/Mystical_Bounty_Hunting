@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mysticalbountyhunting:cellestium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "mysticalbountyhunting:cellestium_ingot"
+  }
+}

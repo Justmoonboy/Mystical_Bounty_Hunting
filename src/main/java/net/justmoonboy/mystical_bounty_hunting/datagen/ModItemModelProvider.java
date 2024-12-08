@@ -19,6 +19,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_CELLESTIUM.get());
         basicItem(ModItems.CELLESTIUM_NUGGET.get());
 
+        basicItem(ModItems.SPECIAL_STICK.get());
+        basicItem(ModItems.MYSTICAL_FABRIC.get());
+
         basicItem(ModItems.SCRUMPY.get());
         basicItem(ModItems.APPLEJUICE.get());
         basicItem(ModItems.GLOWBULB.get());

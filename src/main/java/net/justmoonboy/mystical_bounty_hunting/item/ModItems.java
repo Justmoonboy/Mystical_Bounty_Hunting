@@ -22,6 +22,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CELLESTIUM_NUGGET = ITEMS.register("cellestium_nugget",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SPECIAL_STICK = ITEMS.register("special_stick",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MYSTICAL_FABRIC = ITEMS.register("mystical_fabric",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> AIRWAND = ITEMS.register("air_wand",
             () -> new AirWandItem(new Item.Properties()));

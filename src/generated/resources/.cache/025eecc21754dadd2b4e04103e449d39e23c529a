@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-07T16:27:21.3380628	Item Models: mysticalbountyhunting
+// 1.21.1	2024-12-07T17:31:18.1518447	Item Models: mysticalbountyhunting
 5cdc8968609fe366d733a8ea34fe9112acbfd91f assets/mysticalbountyhunting/models/item/air_wand.json
 e470b08be3a59f83b67de345900602c70289d57d assets/mysticalbountyhunting/models/item/apple_juice.json
 353e10a7eababab95197e9f2c1a6318fb8e978d1 assets/mysticalbountyhunting/models/item/cellestium_axe.json
@@ -11,6 +11,8 @@ a77d640a54c924f044b213d13c64eb0ab6adaa84 assets/mysticalbountyhunting/models/ite
 65080ebb536d07ea0aac0e0676c1d66d83fe3061 assets/mysticalbountyhunting/models/item/earth_wand.json
 7168c647dddf55933048f274cb3ce9acaeb7f447 assets/mysticalbountyhunting/models/item/fire_wand.json
 d3b9a5c5f773d897b648db0424770638ae1d7413 assets/mysticalbountyhunting/models/item/glow_bulb.json
+dbf7d78851a6673373828c69a55d1046fa21126a assets/mysticalbountyhunting/models/item/mystical_fabric.json
 482346dfde54d0ba9fc69a6c309c75b651b68447 assets/mysticalbountyhunting/models/item/raw_cellestium.json
 85da90bee866043c273868a0776b050f1bf7226a assets/mysticalbountyhunting/models/item/scrumpy.json
+05f805c6e1fec617149f09e44dd2b63b33a2b0b8 assets/mysticalbountyhunting/models/item/special_stick.json
 3a960434aef6084f696d024e406c2454ae843c1a assets/mysticalbountyhunting/models/item/water_wand.json

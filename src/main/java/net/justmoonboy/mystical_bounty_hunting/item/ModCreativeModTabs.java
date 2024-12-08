@@ -41,6 +41,9 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.WATERWAND);
 
                         output.accept(ModBlocks.BOUNTY_BOARD);
+
+                        output.accept(ModItems.SPECIAL_STICK);
+                        output.accept(ModItems.MYSTICAL_FABRIC);
                     }).build());
 
 
